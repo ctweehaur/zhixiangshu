@@ -10,55 +10,48 @@
            ========================================================================== */
 
         :root {
-            /* 📜 1. 基底：温润宣纸与松烟墨字（冷暖平衡，绝不刺眼） */
             --bg-color: #f6f3ea;
             --bg-gradient: radial-gradient(circle at 20% 20%, #fbf9f4 0%, #ede7d8 100%);
-            --text-color: #1e242b;         /* 松烟浓墨：比纯黑更柔和，带一丝微不可察的深蓝灰 */
-            --text-muted: #686359;         /* 淡墨褐灰：与宣纸同色系的辅助字色 */
-            --card-bg: #fdfbf7;            /* 熟宣白卡片：温润通透 */
+            --text-color: #1e242b;
+            --text-muted: #686359;
+            --card-bg: #fdfbf7;
             
-            /* 🔷 2. 主色调：矿物克莱因灰蓝（全局统一主色） */
             --primary-color: #2b4c65;
             --primary-hover: #1d3649;
 
-            /* 💧 3. 水痕洗染底色（半透明矿物蓝融入宣纸，全局统一） */
             --notebook-color: #2b4c65;
             --notebook-bg: rgba(43, 76, 101, 0.08);
 
-            /* 🖋️ 4. 文本赏析：与主色调完全统一 */
             --ai-color: #2b4c65;
             --ai-bg: rgba(43, 76, 101, 0.06);
 
-            /* ⚖️ 5. 正误状态色（高对比清晰可读，克制不刺眼） */
-            --accent-color: #2b4c65;       /* 正确/强调：统一矿物克莱因灰蓝 */
+            --accent-color: #2b4c65;
             --accent-bg: rgba(43, 76, 101, 0.09);
             
-            --wrong-color: #8c5347;        /* 按钮/清空：低饱和度陶土灰褐 */
-            --wrong-bg: #f3e8e6;           /* 错题选项底色：柔和浅陶灰底 */
-            --wrong-text: #7f392d;         /* 错题选项文字：高对比深陶褐字（清晰可读） */
-            --wrong-border: #c99e95;       /* 错题选项边框 */
+            --wrong-color: #8c5347;
+            --wrong-bg: #f3e8e6;
+            --wrong-text: #7f392d;
+            --wrong-border: #c99e95;
 
-            --ruby-color: #7c6850;         /* 拼音：亚麻古铜褐，与宣纸自然呼应 */
-            --input-border: #dcd5c5;       /* 宣纸亚麻边框：消除冷灰割裂感 */
+            --ruby-color: #7c6850;
+            --input-border: #dcd5c5;
             --shadow-sm: 0 4px 10px -2px rgba(45, 40, 32, 0.05), 0 2px 4px -1px rgba(45, 40, 32, 0.03);
             --shadow-md: 0 18px 35px -8px rgba(45, 40, 32, 0.07), 0 8px 12px -6px rgba(45, 40, 32, 0.04);
             --radius-lg: 16px;
             --radius-md: 10px;
 
-            /* 🔠 动态字号变量（支持 A- / A+ 无级缩放） */
             --article-font-size: 19.5px;
             --ruby-font-size: 12.5px;
         }
 
-        /* 🌙 暗黑模式：月夜砚台与星光灰蓝 */
         [data-theme="dark"] {
             --bg-color: #0d1218;
             --bg-gradient: radial-gradient(circle at top right, #161f29 0%, #0d1218 100%);
-            --text-color: #e6e4de;         /* 暖米灰白字：夜读不伤眼 */
+            --text-color: #e6e4de;
             --text-muted: #8e99a6;
-            --card-bg: #151d26;            /* 砚台深灰蓝卡片底 */
+            --card-bg: #151d26;
             
-            --primary-color: #6b9ac4;      /* 夜读清亮灰蓝 */
+            --primary-color: #6b9ac4;
             --primary-hover: #8bb3d6;
             
             --notebook-color: #8bb3d6;
@@ -72,7 +65,7 @@
             
             --wrong-color: #a86456;
             --wrong-bg: rgba(168, 100, 86, 0.22);
-            --wrong-text: #f5c2b8;         /* 暗黑模式错题亮暖褐字，确保清晰可见 */
+            --wrong-text: #f5c2b8;
             --wrong-border: #a86456;
 
             --ruby-color: #b5a68f;
@@ -81,27 +74,12 @@
             --shadow-md: 0 18px 35px -5px rgba(0, 0, 0, 0.65);
         }
 
-        /* 🌟 极简纤细优雅滚动条 */
-        ::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cfc7b4;
-            border-radius: 3px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #b0a690;
-        }
-        [data-theme="dark"] ::-webkit-scrollbar-thumb {
-            background: #2a3644;
-        }
-        [data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
-            background: #3d4e61;
-        }
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cfc7b4; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #b0a690; }
+        [data-theme="dark"] ::-webkit-scrollbar-thumb { background: #2a3644; }
+        [data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: #3d4e61; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
@@ -117,9 +95,6 @@
             transition: background 0.3s ease, color 0.3s ease;
         }
 
-        /* ==========================================================================
-           🧭 顶栏左右分组工具栏 & 可折叠生词本
-           ========================================================================== */
         .top-container {
             width: 100%;
             max-width: 1440px;
@@ -143,7 +118,6 @@
             align-items: center;
         }
 
-        /* 🔘 顶栏按钮全局统一风格 */
         .control-panel button {
             padding: 9px 16px;
             border: 1px solid var(--input-border);
@@ -175,7 +149,6 @@
             color: #ffffff;
         }
 
-        /* 字号调节紧凑按钮组 */
         .font-zoom-group {
             display: inline-flex;
             border: 1px solid var(--input-border);
@@ -198,7 +171,6 @@
             transform: none;
         }
 
-        /* 📖 生词本支持词数统计与折叠收纳 */
         .vocab-notebook {
             width: 100%;
             background: var(--card-bg);
@@ -299,9 +271,6 @@
             transform: translateY(-1px);
         }
 
-        /* ==========================================================================
-           🖥️ 左右双栏 5.8 : 4.2 黄金阅读比 (1.38fr : 1fr)
-           ========================================================================== */
         .workspace-layout {
             display: grid;
             grid-template-columns: 1.38fr 1fr;
@@ -312,7 +281,6 @@
             transition: all 0.3s ease;
         }
 
-        /* 生词测试弹窗区 */
         .game-container {
             width: 100%;
             max-width: 1440px;
@@ -355,9 +323,6 @@
             letter-spacing: 2px;
         }
 
-        /* ==========================================================================
-           📄 左侧课文卡片 & 马来西亚文言专名号（人名/地名/朝代下划线）
-           ========================================================================== */
         .article-card {
             width: 100%;
             background: var(--card-bg);
@@ -393,7 +358,6 @@
             transition: background-color 0.4s ease, box-shadow 0.4s ease;
         }
 
-        /* 📏 马来西亚华文标准：文言专名号（精准锁定在汉字底部，绝不干扰顶部拼音） */
         .proper-noun {
             text-decoration: underline;
             text-decoration-thickness: 1.5px;
@@ -401,7 +365,6 @@
             text-decoration-color: currentColor;
         }
 
-        /* 📍 点击题目“第X段”时的左侧课文水墨呼吸高亮动画 */
         @keyframes paragraphPulse {
             0% { background-color: var(--accent-bg); box-shadow: 0 0 0 6px var(--accent-bg); }
             70% { background-color: var(--accent-bg); box-shadow: 0 0 0 6px var(--accent-bg); }
@@ -435,7 +398,6 @@
             border-color: var(--primary-color);
         }
 
-        /* 📍 右侧题目中的“📍第X段”可点击定位芯片 */
         .para-jump-link {
             display: inline-flex;
             align-items: center;
@@ -461,7 +423,6 @@
         ruby { ruby-position: over; cursor: pointer; padding: 0 2px; border-radius: 4px; transition: all 0.2s ease; }
         ruby:hover, ruby.is-active { background: var(--accent-bg); color: var(--primary-color); }
 
-        /* 🔤 拼音三态控制（悬停显示 / 全局显示 / 完全隐藏） */
         #content rt {
             opacity: 0;
             transition: opacity 0.2s ease;
@@ -476,9 +437,6 @@
         #content[data-pinyin-mode="show"] rt { opacity: 1 !important; }
         #content[data-pinyin-mode="hide"] rt { opacity: 0 !important; }
 
-        /* ==========================================================================
-           🗂️ 右侧题目卡片 & 顶部吸顶分段标签栏 (Segmented Tabs)
-           ========================================================================== */
         .quiz-side-card {
             width: 100%;
             background: var(--card-bg);
@@ -552,7 +510,6 @@
             color: var(--text-color);
         }
 
-        /* 题目块与漏题闪烁提醒动画 */
         .quiz-question-box {
             margin-bottom: 22px;
             padding: 12px 14px 18px 14px;
@@ -570,9 +527,6 @@
             animation: unanswerPulse 1.5s ease-in-out;
         }
 
-        /* ==========================================================================
-           💬 词典气泡弹窗（含独立『译』标签行 & 『古义/今义』上下双行对齐）
-           ========================================================================== */
         .buddy-popover {
             display: none;
             position: fixed;
@@ -617,7 +571,6 @@
         }
         .pop-zh .pop-tag { background: var(--primary-color); }
 
-        /* 🏛️ 古义与今义上下分行的微标签样式 */
         .zh-lines-wrap {
             display: flex;
             flex-direction: column;
@@ -682,7 +635,6 @@
             border-bottom: 8px solid var(--primary-color);
         }
 
-        /* 🔘 客观选择题选项按钮样式 */
         .quiz-choice-btn { 
             background: var(--card-bg) !important; 
             color: var(--text-color) !important; 
@@ -716,7 +668,6 @@
             font-weight: 700 !important;
         }
 
-        /* 简答题文本框样式 */
         .essay-textarea {
             width: 100%;
             height: 95px;
@@ -739,7 +690,6 @@
             box-shadow: 0 0 0 3px rgba(43, 76, 101, 0.14);
         }
 
-        /* 简答题参考答案容器 */
         .essay-answer-box {
             display: none;
             margin-top: 10px;
@@ -753,7 +703,6 @@
             line-height: 1.7;
         }
 
-        /* 📋 作答报告底部导出栏 */
         .report-action-bar {
             margin-top: 28px;
             padding: 16px 18px;
@@ -767,7 +716,6 @@
             gap: 12px;
         }
 
-        /* 🌟 文本赏析与考点解析 */
         .teacher-p-analysis, [id^="q-analysis-"], [id^="essay-analysis-"] {
             background: var(--ai-bg) !important;
             border: 1px solid var(--input-border);
@@ -798,9 +746,6 @@
             .article-card { padding: 32px 24px 32px 62px; }
         }
 
-        /* ==========================================================================
-           🖨️ 专属打印与 PDF 导出优化样式 (@media print)
-           ========================================================================== */
         @media print {
             body {
                 background: #ffffff !important;
@@ -820,22 +765,15 @@
             .no-print {
                 display: none !important;
             }
-            .top-container {
-                margin-bottom: 15px !important;
-            }
+            .top-container { margin-bottom: 15px !important; }
             .vocab-notebook {
                 box-shadow: none !important;
                 border: 1px solid #94a3b8 !important;
                 padding: 12px 16px !important;
                 page-break-inside: avoid;
             }
-            .vocab-notebook.is-collapsed .notebook-list {
-                display: flex !important;
-            }
-            .workspace-layout {
-                display: block !important;
-                width: 100% !important;
-            }
+            .vocab-notebook.is-collapsed .notebook-list { display: flex !important; }
+            .workspace-layout { display: block !important; width: 100% !important; }
             .article-card,
             .quiz-side-card {
                 max-height: none !important;
@@ -852,35 +790,22 @@
                 border-top: 2px solid #2b4c65 !important;
                 padding-top: 20px !important;
             }
-            #mcSectionWrapper,
-            #essaySectionWrapper {
-                display: block !important;
-            }
-            .quiz-choice-btn {
-                border: 1px solid #94a3b8 !important;
-                page-break-inside: avoid;
-            }
-            .essay-textarea {
-                border: 1px solid #64748b !important;
-                min-height: 90px !important;
-                page-break-inside: avoid;
-            }
+            #mcSectionWrapper, #essaySectionWrapper { display: block !important; }
+            .quiz-choice-btn { border: 1px solid #94a3b8 !important; page-break-inside: avoid; }
+            .essay-textarea { border: 1px solid #64748b !important; min-height: 90px !important; page-break-inside: avoid; }
         }
     </style>
 </head>
 <body>
 
-    <!-- 顶栏操作区（左右功能分组 + 字号无级缩放） -->
     <div id="topContainer" class="top-container">
         <div class="control-panel">
-            <!-- 左侧：核心阅读与教学交互开关 -->
             <div class="control-group">
                 <button id="pinyinToggleBtn" onclick="togglePinyinMode()">🔤 拼音：悬停</button>
                 <button id="teacherToggleBtn" onclick="toggleTeacherMode()">👁️ 文本赏析</button>
                 <button id="gameToggleBtn" onclick="toggleGameMode()">🎯 生词测试</button>
                 <button id="focusToggleBtn" onclick="toggleFocusMode()">📖 专注模式</button>
             </div>
-            <!-- 右侧：字号缩放、全局导出与视图环境工具 -->
             <div class="control-group">
                 <div class="font-zoom-group" title="调整课文正文字号大小">
                     <button onclick="adjustFontSize(-1.5)">A-</button>
@@ -892,7 +817,6 @@
             </div>
         </div>
 
-        <!-- 支持词数统计与一键折叠的生词本 -->
         <div id="vocabNotebookCard" class="vocab-notebook">
             <div class="notebook-title">
                 <div class="notebook-title-left" onclick="toggleNotebookCollapse()" title="点击折叠或展开生词本">
@@ -909,7 +833,6 @@
         </div>
     </div>
 
-    <!-- 生词测试全屏浮层 -->
     <div id="gameContainer" class="game-container" style="display: none;">
         <div class="quiz-card">
             <div id="quizProgress" style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px; font-weight: 700;"></div>
@@ -919,9 +842,7 @@
         </div>
     </div>
 
-    <!-- 左右双栏主工作区 -->
     <div class="workspace-layout">
-        <!-- 左侧：课文与总览赏析 -->
         <div id="articleCard" class="article-card">
             <h1 id="articleTitle">课文加载中...</h1>
             <div id="teacherArticleAnalysis" style="display: none; position: relative;">
@@ -930,7 +851,6 @@
             <div id="content" data-pinyin-mode="hover"></div>
         </div>
 
-        <!-- 右侧：客观题及简答题区 -->
         <div id="quizSection" class="quiz-side-card">
             <div class="quiz-sticky-header">
                 <div class="quiz-tabs-bar">
@@ -940,7 +860,6 @@
                 </div>
             </div>
 
-            <!-- 面板一：客观选择题 -->
             <div id="mcSectionWrapper">
                 <div class="section-sub-header">
                     <h2>📝 一、选择题（客观题）</h2>
@@ -962,7 +881,6 @@
                 </div>
             </div>
 
-            <!-- 面板二：主观简答题 -->
             <div id="essaySectionWrapper" style="display: none;">
                 <div class="section-sub-header">
                     <h2>✍️ 二、简答题（主观题）</h2>
@@ -971,7 +889,6 @@
                 <div id="essayContainer"></div>
             </div>
 
-            <!-- 底部一键生成作答报告栏 -->
             <div class="report-action-bar">
                 <div style="font-size: 13px; color: var(--text-muted); font-weight: 600;">
                     💡 完成后可一键复制学习记录提交给老师，或导出 PDF 讲义。
@@ -988,7 +905,6 @@
         </div>
     </div>
 
-    <!-- 词典气泡弹窗（含独立『译』标签行 & 古今异义自动上下分行） -->
     <div id="buddyPopover" class="buddy-popover">
         <div class="pop-title-row">
             <span id="popWord" class="pop-title">词</span>
@@ -1010,12 +926,10 @@
         <div id="popArrow" class="pop-arrow"></div>
     </div>
 
-    <!-- 🔗 外部独立数据挂载文件 -->
     <script src="data.js"></script>
     <script src="questions.js"></script>
     <script src="analysis.js"></script>
 
-    <!-- ⚙️ 阅读器核心逻辑控制大脑 -->
     <script>
         const LESSON_NAMESPACE = (typeof lessonTitle !== 'undefined' && lessonTitle.trim() !== '')
             ? lessonTitle.trim().replace(/\s+/g, '_')
@@ -1037,11 +951,37 @@
         let userSelectedAnswers = {};
         let currentFontSize = parseFloat(localStorage.getItem('reader_pref_font_size')) || 19.5;
 
-        /* 🧠 智能词条解析器 */
+        /* 🏷️ 智能文体单位识别器：自动兼容 sectionUnit、诗歌 <br> 分节、古诗逐句与宋词上下阕 */
+        function getSectionLabel(index, forcePoetryStanza) {
+            if (typeof sectionUnit !== 'undefined' && sectionUnit) {
+                return `第${index}${sectionUnit}`;
+            }
+            if (typeof window.sectionUnit !== 'undefined' && window.sectionUnit) {
+                return `第${index}${window.sectionUnit}`;
+            }
+            const pMap = (typeof lessonTeacherAnalysis !== 'undefined' && lessonTeacherAnalysis.paragraphs) ? lessonTeacherAnalysis.paragraphs : null;
+            const currentRaw = (pMap && pMap[index]) ? pMap[index] : '';
+            const firstRaw = (pMap && pMap[1]) ? pMap[1] : '';
+            const sample = currentRaw || firstRaw;
+
+            const headerMatch = sample.match(/【([^】]+)】/);
+            const headerText = headerMatch ? headerMatch[1] : '';
+
+            if (/^(?:上阕|（上阕）)/.test(headerText)) return '上阕';
+            if (/^(?:下阕|（下阕）)/.test(headerText)) return '下阕';
+            if (/^(?:第[一二三四五六七八九十\d]+句|其[一二三四].*?[·•]\s*(?:首句|次句|第三句|第四句|末句)|首句|次句|第三句|第四句|末句)/.test(headerText)) {
+                return `第${index}句`;
+            }
+            if (/^第[一二三四五六七八九十\d]+节/.test(headerText) || forcePoetryStanza) return `第${index}节`;
+            if (/^第[一二三四五六七八九十\d]+层/.test(headerText)) return `第${index}层`;
+
+            return `第${index}段`;
+        }
+
         function extractWordMeanings(item) {
             if (!item) return { word: '', pinyin: '', zh: '', zhPlain: '', en: '', bm: '', isProperNoun: false };
             const rawWord = item[0] || '';
-            const word = rawWord.replace(/<\/?u>/g, '');
+            const word = rawWord.replace(/<\/?u>/g, '').replace(/<br\s*\/?>/gi, '');
             const pinyin = item[1] || '';
             let rawEn = (item[2] || '').trim();
             const bm = (item[3] || '').trim();
@@ -1054,18 +994,13 @@
                 rawEn = bracketMatch[2].trim();
             }
 
-            // 单行纯文本版本（供导出词表与生词测试题按钮使用）
             const zhPlain = zh.replace(/<br\s*\/?>/gi, ' ｜ ').replace(/\n+/g, ' ｜ ');
-
             return { word, pinyin, zh, zhPlain, en: rawEn, bm, isProperNoun };
         }
 
-        /* 🏛️ 将『译』文本渲染为上下双行 HTML（自动识别“古义/今义”或换行符 \n） */
         function formatZhPopoverHtml(zhText) {
             if (!zhText) return '';
             let normalized = zhText.replace(/<br\s*\/?>/gi, '\n');
-
-            // 若写在同一行如“古义：婆婆（今义：姑妈）”，自动将括号内的今义拆到下一行
             if (!normalized.includes('\n')) {
                 normalized = normalized.replace(/\s*[（(]\s*(今(?:义|常作)[：:][^）)]+)[）)]/g, '\n$1');
             }
@@ -1176,11 +1111,24 @@
 
         function linkifyParagraphReferences(htmlText) {
             if (!htmlText) return "";
-            return htmlText.replace(/第\s*([0-9一二三四五六七八九十]+)\s*段/g, (match, numStr) => {
+            let result = htmlText.replace(/第\s*([0-9一二三四五六七八九十]+)\s*([段句节层])/g, (match, numStr, unit) => {
                 const pNum = parseChineseNumber(numStr);
                 if (!pNum) return match;
-                return `<span class="para-jump-link" onclick="scrollToParagraph(${pNum}, event)" title="点击定位至左侧课文第 ${pNum} 段">📍第${pNum}段</span>`;
+                return `<span class="para-jump-link" onclick="scrollToParagraph(${pNum}, event)" title="点击定位至左侧课文第 ${pNum} ${unit}">📍第${pNum}${unit}</span>`;
             });
+
+            const sample = getSectionLabel(1);
+            if (sample.endsWith('句')) {
+                result = result
+                    .replace(/首句/g, `<span class="para-jump-link" onclick="scrollToParagraph(1, event)" title="点击定位至左侧第 1 句">📍首句</span>`)
+                    .replace(/次句/g, `<span class="para-jump-link" onclick="scrollToParagraph(2, event)" title="点击定位至左侧第 2 句">📍次句</span>`)
+                    .replace(/末句/g, `<span class="para-jump-link" onclick="scrollToParagraph(4, event)" title="点击定位至左侧末句">📍末句</span>`);
+            } else if (sample === '上阕') {
+                result = result
+                    .replace(/上阕/g, `<span class="para-jump-link" onclick="scrollToParagraph(1, event)" title="点击定位至左侧上阕">📍上阕</span>`)
+                    .replace(/下阕/g, `<span class="para-jump-link" onclick="scrollToParagraph(2, event)" title="点击定位至左侧下阕">📍下阕</span>`);
+            }
+            return result;
         }
 
         function scrollToParagraph(pNum, event) {
@@ -1441,12 +1389,14 @@
             }
         }
 
+        /* 📜 升级版课文与诗歌渲染引擎：完美兼容 ["<br>"]、单换行、双换行分节及古诗逐句对齐 */
         function render() {
             const cnt = document.getElementById('content'); 
             if (!cnt) return;
             cnt.innerHTML = "";
             let pNum = 1; 
             let p = document.createElement("p"); 
+            let hasBrInCurrentP = false;
             
             const topAnalysis = document.getElementById('teacherArticleAnalysis');
             const topAnalysisContent = document.getElementById('teacherArticleAnalysisContent');
@@ -1459,10 +1409,21 @@
                 }
             }
 
+            const hasDoubleNewline = (typeof lessonData !== 'undefined') && lessonData.some((item, idx) => 
+                item[0] === "\n" && idx + 1 < lessonData.length && lessonData[iIdxSafe(idx + 1)][0] === "\n" && idx + 2 < lessonData.length - 8
+            );
+
+            function iIdxSafe(idx) {
+                return Math.min(idx, lessonData.length - 1);
+            }
+
             function finalizeParagraph(paragraphElement) {
                 if (paragraphElement.childNodes.length === 0) return;
                 const textContent = paragraphElement.innerText.trim();
-                const isAuthorLineAtEnd = (textContent.startsWith("（") && textContent.includes("《"));
+                const isAuthorLineAtEnd = (
+                    (textContent.startsWith("（") && textContent.includes("《")) ||
+                    (textContent.includes("（") && textContent.includes("《") && textContent.endsWith("）") && textContent.length < 40)
+                );
                 
                 if (isAuthorLineAtEnd) {
                     paragraphElement.style.textIndent = "0";
@@ -1473,15 +1434,17 @@
                     cnt.appendChild(paragraphElement);
                 } else {
                     const currentPNum = pNum;
+                    const secLabel = getSectionLabel(currentPNum, hasBrInCurrentP);
                     paragraphElement.id = `article-p-${currentPNum}`;
                     paragraphElement.style.position = "relative";
-                    paragraphElement.style.textIndent = "2em"; 
+                    const isPoetryBlock = hasDoubleNewline || hasBrInCurrentP || secLabel.endsWith('句') || secLabel.endsWith('节') || secLabel.endsWith('层');
+                    paragraphElement.style.textIndent = isPoetryBlock ? "0" : "2em"; 
                     paragraphElement.style.paddingLeft = "0"; 
                     paragraphElement.style.marginBottom = "25px";
                     
                     let s = document.createElement("span");
                     s.className = "p-index";
-                    s.innerText = `第${currentPNum}段`;
+                    s.innerText = secLabel;
                     
                     paragraphElement.insertBefore(s, paragraphElement.firstChild); 
                     cnt.appendChild(paragraphElement);
@@ -1491,34 +1454,83 @@
                         pAnalysis.id = `p-analysis-${currentPNum}`;
                         pAnalysis.className = "teacher-p-analysis";
                         pAnalysis.style.textIndent = "0";
-                        pAnalysis.innerHTML = `<strong>🔍 第 ${currentPNum} 段文本赏析：</strong>${linkifyParagraphReferences(lessonTeacherAnalysis.paragraphs[currentPNum])}`;
+                        pAnalysis.innerHTML = `<strong>🔍 ${secLabel}文本赏析：</strong>${linkifyParagraphReferences(lessonTeacherAnalysis.paragraphs[currentPNum])}`;
                         
                         pAnalysis.style.display = isTeacherMode ? "block" : "none";
                         cnt.appendChild(pAnalysis);
                     }
                     pNum++; 
                 }
+                hasBrInCurrentP = false;
             }
 
             if (typeof lessonData !== 'undefined') {
-                lessonData.forEach((d, i) => {
-                    if (d[0] === "\n") { finalizeParagraph(p); p = document.createElement("p"); }
-                    else if (d[1] === "") { let s = document.createElement("span"); s.innerText = d[0]; p.appendChild(s); }
+                for (let i = 0; i < lessonData.length; i++) {
+                    const d = lessonData[i];
+                    const rawToken = String(d[0] || '').trim();
+
+                    // 1. 强制拦截任何形式的 <br> 换行标记，绝不印出 "<br>" 文字列
+                    if (/^<br\s*\/?>$/i.test(rawToken)) {
+                        p.appendChild(document.createElement("br"));
+                        hasBrInCurrentP = true;
+                    }
+                    // 2. 处理 "\n" 段落或小节分隔符
+                    else if (d[0] === "\n") {
+                        if (hasDoubleNewline) {
+                            if (i + 1 < lessonData.length && lessonData[i + 1][0] === "\n") {
+                                finalizeParagraph(p);
+                                p = document.createElement("p");
+                                i++;
+                            } else if (i >= lessonData.length - 12) {
+                                finalizeParagraph(p);
+                                p = document.createElement("p");
+                            } else {
+                                p.appendChild(document.createElement("br"));
+                                hasBrInCurrentP = true;
+                            }
+                        } else {
+                            finalizeParagraph(p);
+                            p = document.createElement("p");
+                        }
+                    }
+                    // 3. 普通标点或无注音文本（若内含 <br> 也自动拆分为真实换行）
+                    else if (!d[1] || d[1] === "") {
+                        if (/<br\s*\/?>/i.test(d[0])) {
+                            const parts = String(d[0]).split(/<br\s*\/?>/i);
+                            parts.forEach((part, idx) => {
+                                if (part) {
+                                    let s = document.createElement("span");
+                                    s.innerText = part;
+                                    p.appendChild(s);
+                                }
+                                if (idx < parts.length - 1) {
+                                    p.appendChild(document.createElement("br"));
+                                    hasBrInCurrentP = true;
+                                }
+                            });
+                        } else {
+                            let s = document.createElement("span");
+                            s.innerText = d[0];
+                            p.appendChild(s);
+                        }
+                    }
+                    // 4. 带拼音与词典释义的词条
                     else {
                         const m = extractWordMeanings(d);
                         let r = document.createElement("ruby"); 
                         r.setAttribute("data-word-index", i);
+                        const wordIdx = i;
                         r.onclick = (e) => { 
                             e.stopPropagation(); 
                             document.querySelectorAll('ruby').forEach(x=>x.classList.remove('is-active')); 
                             r.classList.add('is-active'); 
-                            openPop(e.currentTarget, i);
+                            openPop(e.currentTarget, wordIdx);
                         };
                         const wordHtml = m.isProperNoun ? `<span class="proper-noun">${m.word}</span>` : m.word;
                         r.innerHTML = `${wordHtml}<rt>${m.pinyin}</rt>`; 
                         p.appendChild(r);
                     }
-                });
+                }
                 finalizeParagraph(p);
             }
         }
@@ -1554,8 +1566,13 @@
                 qText.style.fontWeight = "800";
                 qText.style.fontSize = "15.5px";
                 qText.style.marginBottom = "10px";
-                const formattedQuestion = linkifyParagraphReferences(q.question.replace(/\n/g, '<br>'));
-                qText.innerHTML = `${q.id}. ${formattedQuestion}`;
+                const formattedQuestion = linkifyParagraphReferences(q.question.replace(/\n/g, '<br>')).trim();
+
+                if (/^<div\b/i.test(formattedQuestion) && formattedQuestion.includes('</div>')) {
+                    qText.innerHTML = formattedQuestion.replace('</div>', `</div>${q.id}. `);
+                } else {
+                    qText.innerHTML = `${q.id}. ${formattedQuestion}`;
+                }
                 qBox.appendChild(qText);
 
                 if (q.teacherAnalysis) {
